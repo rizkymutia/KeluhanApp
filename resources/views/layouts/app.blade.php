@@ -16,16 +16,25 @@
     <!-- Scripts -->
     
 </head>
-<body>
-    <div id="app">
+<body style="display: flex; flex-direction: column; min-height: 100vh">
+    <div id="app" style="flex: 1">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+
+                <div>
+                    <a href="{{ url('/home') }}">"Logo Navbar"</a>
+                </div>
+            
+                <div>
+                    <ul>
+                        <li><a href="{{ url('/home') }}">Home</a></li>
+                        <li><a href="{{ url('/about') }}">About</a></li>
+                        <li><a href="{{ url('/contact') }}">Contact</a></li>    
+                    </ul>
+                </div>
+                
+
+                
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
@@ -78,3 +87,4 @@
     </div>
 </body>
 </html>
+<x-footer></x-footer>

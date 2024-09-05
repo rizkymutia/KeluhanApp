@@ -16,8 +16,16 @@
 
                     {{ __('You are logged in!') }}
                 </div>
+            <div>
+                    <p>Apakah anda ingin melapor ?</p>
+                        <a href={{ route('report') }}>
+                            <button>Lapor</button>
+                        </a>
+            </div>        
             </div>
         </div>
     </div>
 </div>
 @endsection
+
+    

@@ -1,3 +1,3 @@
 <footer>
-    <p>footer Team Magang Sleman</p>
+    <p style="text-align: center">footer Team Magang Sleman</p>
 </footer>
